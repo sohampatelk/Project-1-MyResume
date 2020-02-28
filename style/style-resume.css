@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+#button-top{
+    float: right;
+}
+
 @media(max-width:500px){
     .main{
         width: 100%;
