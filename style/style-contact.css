@@ -1,0 +1,38 @@
+.container{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.my-form{
+	padding:20px;
+}
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+.my-form label{
+	display: block;
+}
+
+input, textarea{
+    padding-bottom: 8px;
+    font-size: 16px;
+	width: 100%;
+	border: 2px rgb(85, 83, 83) solid;
+}
+.button{
+	width: auto;
+}
+
+@media(max-width:500px){
+    
+    .container{
+        width: 100%;
+        float: none;
+    }
+
+    
+} 
