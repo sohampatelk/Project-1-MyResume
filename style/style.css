@@ -1,15 +1,15 @@
+/* index.html css file, general css formate of website. it includes first page with header , footer and body. */
+
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
-
 body {
   background: #ccc;
   margin: 10px 20px;
   line-height: 1.4;
 }
-
 .btn {
   background-color: #333;
   color: #fff;
@@ -17,24 +17,22 @@ body {
   text-decoration: none;
   border: 0;
 }
-
 img {
   max-width: 100%;
 }
 
+/* Wrapper class. */
 .wrapper {
   display: grid;
   grid-gap: 10px;
   margin: 0;
 }
-
 .head-1{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
 }
-
 .head-1 img{
   height: 80px;
   width: 80px;
@@ -52,7 +50,6 @@ img {
   list-style: none;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .main-nav a {
   background: #ddd;
   display: block;
@@ -63,9 +60,7 @@ img {
   text-transform: uppercase;
   font-size: 1.1rem;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  
 }
-
 .main-nav a:hover {
   background: #333;
   color: #fff;
@@ -81,7 +76,7 @@ img {
     
 }
 
-/* Showcase */
+/* Showcase .which is grid items for Top container.*/
 .showcase {
   grid-area: showcase;
   min-height: 400px;
@@ -106,12 +101,13 @@ img {
   color: #fff;
 }
 
-/* Info */
+
+/* Info is second image in index.html page. whic is grid.*/
 .info{
   color: #333;
   font-size: 26px;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  background: url("../image/pic1.jpg");
+  background: url("../image/pic2-index.jpg");
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr;
@@ -121,7 +117,7 @@ img {
   align-items: center;
 }
 
-/* Footer */
+/* Footer . it is common for all pages.*/
 footer{
   margin-top: 2rem;
   background: #333;
@@ -145,25 +141,22 @@ footer{
   color: #fff;
 }
 
-/* media Query */
+/* media Query for less than 700px width*/
 @media(max-width: 700px){
   .top-container{
     grid-template-areas: 
     "showcase showcase"
     "top-box-a top-box-b";
   }
-
   .showcase h1{
     font-size: 2.5rem;
   }
-
   .main-nav ul{
     grid-template-columns: 1fr;
   }
   .info{
     grid-template-columns: 1fr;
   }
-
   .info .btn{
     display: block;
     text-align: center;
@@ -171,6 +164,7 @@ footer{
   }
 }
 
+/* media Query for less than 500px width*/
 @media(max-width: 500px){
   .top-container{
     grid-template-areas: 
@@ -180,6 +174,7 @@ footer{
   }
 }
 
+/* media Query for less than 350px width*/
 @media(max-width:350px){
   .wrapper{
     display: flex;

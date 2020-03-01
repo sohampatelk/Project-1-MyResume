@@ -1,6 +1,7 @@
-/* .container ul{
-    padding-left: 15px;
-} */
+/* Resume.html page style 
+For, common style is in style.css and new body style is is this file. */
+
+
 .container{
     box-sizing: border-box;
     font-size: 18px;
@@ -27,13 +28,6 @@
     padding: 20px;
     box-sizing: border-box;
 } 
-
-/* .c2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-} */
-
 
 @media(max-width:500px){
     .main{
