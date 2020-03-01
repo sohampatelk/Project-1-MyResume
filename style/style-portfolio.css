@@ -1,5 +1,25 @@
-/* Portfolio */
 
+.top-box {
+  background: #ddd;
+  display: grid;
+  grid-template-areas:
+  "top-box-a top-box-b";
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5rem;
+}
+.top-box .price {
+  font-size: 2rem;
+}
+.top-box-a {
+  grid-area: top-box-a;
+}
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+/* Portfolio */
 .portfolio{
     display: grid;
     grid-gap: 20px;
@@ -8,7 +28,7 @@
   
   .portfolio img{
     width: 100%;
-    box-shadow: var(--shadow);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   }
 
   .boxes {
@@ -18,9 +38,18 @@
   }
   
   .box{
-    background: var(--primary);
+    background: #ddd;
     text-align: center;
-    padding: 1.5rem 2 rem;
-    box-shadow: var(--shadow);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   }
   
+
+  @media(max-width: 600px){
+    .top-box{
+      grid-template-areas: 
+      "top-box-a"
+      "top-box-b";
+      grid-gap: 15px;
+    }
+  }

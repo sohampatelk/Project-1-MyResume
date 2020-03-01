@@ -1,15 +1,15 @@
 /* CSS Variables */
-:root {
+/* :root {
   --primary: #ddd;
   --dark: #333;
   --light: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
+} */
 
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
+  color: #333;
 }
 
 body {
@@ -19,8 +19,8 @@ body {
 }
 
 .btn {
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: #333;
+  color: #fff;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
@@ -43,6 +43,10 @@ img {
   overflow: hidden;
 }
 
+.head-1 img{
+  height: 80px;
+  width: 80px;
+}
 .main-nav{
   position: sticky;
   top:0px;
@@ -58,21 +62,21 @@ img {
 }
 
 .main-nav a {
-  background: var(--primary);
+  background: #ddd;
   display: block;
   text-decoration: none;
   padding: 0.8rem;
   text-align: center;
-  color: var(--dark);
+  color: #333;
   text-transform: uppercase;
   font-size: 1.1rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   
 }
 
 .main-nav a:hover {
-  background: var(--dark);
-  color: var(--light);
+  background: #333;
+  color: #fff;
 }
 
 /* Top Container */
@@ -81,22 +85,9 @@ img {
   grid-gap: 20px;
   grid-template-areas:
     "showcase showcase showcase"
-    "showcase showcase showcase";
+    "showcase showcase showcase"
+    
 }
-
-
-/* Info */
-.info{
-  background: var(--primary);
-  box-shadow: var(--shadow);
-  background: url("/image/pic1.jpg");
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr;
-  height: 750px;
-  padding: 3rem;
-}
-
 
 /* Showcase */
 .showcase {
@@ -110,58 +101,39 @@ img {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .showcase h1 {
   font-size: 4rem;
   margin-bottom: 0;
-  color: var(--light);
+  color: #fff;
 }
 .showcase p {
   font-size: 1.3rem;
   margin-top: 0;
-  color: var(--light);
+  color: #fff;
 }
 
-/* Top Box */
-.top-box {
-  background: var(--primary);
-  display: frid;
-  align-items: center;
-  justify-items: center;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-}
-.top-box .price {
-  font-size: 2.5rem;
-}
-/* Top side boxes -a-b */
-/* .top-box-a {
-  grid-area: top-box-a;
-}
-.top-box-b {
-  grid-area: top-box-b;
-} */
-
-/* Boxes */
-/* .boxes {
+/* Info */
+.info{
+  color: #333;
+  font-size: 26px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  background: url("/image/pic1.jpg");
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.box{
-  background: var(--primary);
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  height: 750px;
+  padding: 3rem;
   text-align: center;
-  padding: 1.5rem 2 rem;
-  box-shadow: var(--shadow);
-} */
+  align-items: center;
+}
 
 /* Footer */
 footer{
   margin-top: 2rem;
-  background: var(--dark);
-  color: var(--light);
+  background: #333;
+  color: #fff;
   text-align: center;
   padding: 1rem;
 }
@@ -178,7 +150,7 @@ footer{
   
 }
 .flex-link a:hover{
-  color: var(--light);
+  color: #fff;
 }
 
 /* media Query */
@@ -224,5 +196,11 @@ footer{
   }
   .head-1{
     justify-content: center;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: white;
   }
 }
