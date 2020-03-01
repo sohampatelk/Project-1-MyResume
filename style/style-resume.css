@@ -1,7 +1,7 @@
 /* Resume.html page style 
 For, common style is in style.css and new body style is is this file. */
 
-
+/* Container for resume page */
 .container{
     box-sizing: border-box;
     font-size: 18px;
@@ -12,6 +12,7 @@ For, common style is in style.css and new body style is is this file. */
     
 }
 
+/* main and sidebar class */
 .main{
     font-size: 18px;
     float: left;
