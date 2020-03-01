@@ -32,12 +32,17 @@ img {
 
 .wrapper {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
+  margin: 0;
 }
-.wrapper h1{
-  font-size: 2rem;
-  margin:0px 0px; 
+
+.head-1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
+
 .main-nav{
   position: sticky;
   top:0px;
@@ -139,7 +144,7 @@ img {
 } */
 
 /* Boxes */
-.boxes {
+/* .boxes {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -150,20 +155,7 @@ img {
   text-align: center;
   padding: 1.5rem 2 rem;
   box-shadow: var(--shadow);
-}
-
-/* Portfolio */
-
-.portfolio{
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.portfolio img{
-  width: 100%;
-  box-shadow: var(--shadow);
-}
+} */
 
 /* Footer */
 footer{
@@ -229,5 +221,8 @@ footer{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+  .head-1{
+    justify-content: center;
   }
 }

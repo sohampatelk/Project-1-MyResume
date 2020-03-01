@@ -9,22 +9,41 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
+/* .main{
     float: left;
     width: 70%;
-    /* font-size: 18px; */
     padding: 0 20px;
+    font-size: 18px;
     box-sizing: border-box;
-}
+} 
 .sidebar{
     float: right;
     width: 30%;
-    background-color: rgb(85, 83, 83);
-    /* font-size: 18px; */
+    background-color: #333;
     color: #fff;
     padding: 10px;
+    font-size: 18px;
     box-sizing: border-box;
+}  */
+
+.grid-1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
+.main-1{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2 rem;
+    box-shadow: var(--shadow);
+}
+/* .c2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
 
 #button-top{
     float: right;

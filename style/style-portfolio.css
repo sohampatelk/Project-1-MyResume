@@ -1,0 +1,26 @@
+/* Portfolio */
+
+.portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .portfolio img{
+    width: 100%;
+    box-shadow: var(--shadow);
+  }
+
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2 rem;
+    box-shadow: var(--shadow);
+  }
+  
