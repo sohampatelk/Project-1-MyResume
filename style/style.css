@@ -36,6 +36,7 @@ img {
 .head-1 img{
   height: 80px;
   width: 80px;
+  margin-right: 10px;
 }
 .main-nav{
   position: sticky;
@@ -119,7 +120,7 @@ img {
 
 /* Footer . it is common for all pages.*/
 footer{
-  margin-top: 2rem;
+  margin-top: 1rem;
   background: #333;
   color: #fff;
   text-align: center;
