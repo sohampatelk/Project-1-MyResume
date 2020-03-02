@@ -2,46 +2,46 @@
 For, common style is in style.css and new body style is is this file. */
 
 /* Container for resume page */
-.container{
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    
+.container {
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* main and sidebar class */
-.main{
-    font-size: 18px;
-    float: left;
-    width: 70%;
-    padding: 0 20px;
-    box-sizing: border-box;
-} 
-.sidebar{
-    font-size: 18px;
-    float: right;
-    width: 30%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-} 
+.main {
+  font-size: 18px;
+  float: left;
+  width: 70%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.sidebar {
+  font-size: 18px;
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-@media(max-width:500px){
-    .main{
-        width: 100%;
-        float: none;
-    }
-    .sidebar{
-        width: 100%;
-        float: none;
-    }
-    .container ul{
-        padding-left: 20px;
-        width: 100%;
-        float: none;
-    }
+/* Media Quaries */
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+  .container ul {
+    padding-left: 20px;
+    width: 100%;
+    float: none;
+  }
 }

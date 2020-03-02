@@ -1,4 +1,6 @@
+/* portfolio.html design */
 
+/* top-box grid class which design 2 membership box */
 .top-box {
   background: #ddd;
   display: grid;
@@ -6,6 +8,7 @@
   "top-box-a top-box-b";
   align-items: center;
   justify-items: center;
+  grid-gap: 15px;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 1.5rem;
 }
@@ -19,37 +22,44 @@
   grid-area: top-box-b;
 }
 
-/* Portfolio */
+/* Portfolio class - random pictures grid design*/
 .portfolio{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  
-  .portfolio img{
-    width: 100%;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  }
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio img{
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
 
-  .boxes {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
+/* Boxes grid class- which include 4 boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.box{
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
   
-  .box{
-    background: #ddd;
-    text-align: center;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+/* Media Queries */
+@media(max-width: 600px){
+  .top-box{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 15px;
   }
-  
+}
 
-  @media(max-width: 600px){
-    .top-box{
-      grid-template-areas: 
-      "top-box-a"
-      "top-box-b";
-      grid-gap: 15px;
-    }
+@media(max-width: 300px){
+  .boxes{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
+}
