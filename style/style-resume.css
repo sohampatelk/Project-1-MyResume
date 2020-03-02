@@ -27,6 +27,7 @@ For, common style is in style.css and new body style is is this file. */
   color: #fff;
   padding: 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 /* Media Quaries */
